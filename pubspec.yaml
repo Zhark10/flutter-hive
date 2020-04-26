@@ -42,6 +42,16 @@ flutter:
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
+  fonts:
+    - family: Circe
+      fonts:
+        - asset: fonts/Circe-Regular.ttf
+        - asset: fonts/Circe-Light.ttf
+        - asset: fonts/Circe-Bold.ttf
+        - asset: fonts/Circe-ExtraBold.ttf
+        - asset: fonts/Circe-ExtraLight.ttf
+        - asset: fonts/Circe-Thin.ttf
+          style: italic
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
