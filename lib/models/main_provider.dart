@@ -4,7 +4,7 @@ import 'package:hive/hive.dart';
 
 import 'main_box.dart';
 
-class MainService extends ChangeNotifier {
+class MainProvider extends ChangeNotifier {
   String _boxName = "globalBox";
 
   GlobalState _global = GlobalState(colorTheme: Colors.red);
@@ -17,11 +17,11 @@ class MainService extends ChangeNotifier {
 
   void changeColorTheme(newColor) async {
     var box = await Hive.openBox<GlobalState>(_boxName);
-    await box.put(0, newColor);
+    print(box.get(0));
     notifyListeners();
   }
 
-  GlobalState get contactCount {
+  GlobalState get globalState {
     return _global;
   }
 }
